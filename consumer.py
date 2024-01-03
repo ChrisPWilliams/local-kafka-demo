@@ -5,7 +5,7 @@ consumer = KafkaConsumer(
     auto_offset_reset="earliest",
     group_id=None
     )
-consumer.subscribe(["test_1", "test_2"])
+consumer.subscribe(["data_engineers", "software_engineers"])
 
 for message in consumer:
     print(message.value)
